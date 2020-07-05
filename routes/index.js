@@ -11,5 +11,11 @@ exports.level = (req,res)=>{
     user2.level = level.level;
     user2.date = currentDate;
     user2.time = currentTime;
-    user2.save();
+    user2.save((doc,err)=>{
+        if(!err){
+            res.send("Alcohol level has been sent to the database")
+        }else{
+            res.send("Alcohol level has not sent to the database")
+        }
+    });
 }
