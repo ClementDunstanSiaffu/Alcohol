@@ -1,0 +1,25 @@
+{
+  "name": "alcohol",
+  "version": "1.0.0",
+  "description": "this is for kipara boy",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClementDunstanSiaffu/Alcohol.git"
+  },
+  "author": "clement dunstan siaffu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClementDunstanSiaffu/Alcohol/issues"
+  },
+  "homepage": "https://github.com/ClementDunstanSiaffu/Alcohol#readme"
+}
