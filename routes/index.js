@@ -19,3 +19,13 @@ exports.level = (req,res)=>{
         }
     });
 }
+
+exports.getLevel = (req,res)=>{
+    user.find((err,docs)=>{
+        if(!err){
+            res.json(docs)
+        }else{
+            console.log('there is an error')
+        }
+    })
+}
