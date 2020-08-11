@@ -5,8 +5,8 @@ exports.level = (req,res)=>{
     const level = req.params;
     console.log(level.level)
     const date = new Date();
-    const currentDate = date.toLocaleDateString();
-    const currentTime = date.toLocaleTimeString();
+    const currentDate = date.toLocaleDateString("en-US",{timeZone:"Africa/Nairobi"});
+    const currentTime = date.toLocaleTimeString("en-US",{timeZone:"Africa/Nairobi"});
     const user2 = new user();
     user2.level = level.level;
     user2.date = currentDate;
